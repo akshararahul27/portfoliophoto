@@ -1,0 +1,33 @@
+-z-index:
+-Flexbox used to arrangae the HTML elaments in rows and columns
+      -Flex container : parent tag which holds elements that to be arranged as row and coloumn,apply the felx property to the parent tag.
+      -Flex-direction 
+      -Justify-content
+      -align-items
+      -flex-wrap
+ -Pesudo class: A pesudo-class is used to define a special state of an element.
+    -Selector:pesuodo-class{
+                          property: value;
+                        }
+            
+
+
+
+
+
+
+
+4.Webhosting : web server
+              - Netlify
+              -Github pages
+              -Vercel
+
+        --------------------------------------
+                    GIT & GITHub
+        --------------------------------------
+        1.GIT : USED TO CONTROL VESRION
+        2.GIT commands: 
+                -git status: used to check 
+                -git init: used to create/initiate git repository in a folder
+                -git add . : used to track all untracked files to git
+                -git commit -m "message" : used to store /save tracked files to git

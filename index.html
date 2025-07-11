@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Geologica:wght@100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Share+Tech&family=Special+Gothic&display=swap"
+    rel="stylesheet">
+  <!-- animate css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <!-- Header -->
+    <nav>
+      <!-- logo -->
+      <img class="logo" src="./images/image.png" alt="logo">
+      <!-- Links -->
+      <ul>
+        <li class="list-item"><a class="links" href="">Home</a></li>
+        <li class="list-item"><a class="links" href="">About</a></li>
+        <li class="list-item"><a class="links" href="">Skills</a></li>
+        <li class="list-item"><a class="links" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <div class="home-content">
+        <h1 class="animate_animated animate_fadeInLeft" id="username">I'm Maria <span id="lname">Jeo</span></h1>
+        <p id="user-details">This is my official Portfolio website to showcase my journey and work in photography.</p>
+        <a id="download" href="./images/Photography-101-Pocket-Guide.pdf" download>View BROCHURE</a>
+      </div>
+      <div class="home-img">
+        <!-- Shape -->
+        <img class="group1" id="shape" src="./images/bg image2.avif" alt="shape">
+        <!-- Girl -->
+        <img class="group1" id="girl" src="./images/girl image.png" alt="girl">
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <div class="sectionHead">
+        <h2 class="mainHead">About Me</h2>
+        <span class="subHead">Introduction</span>
+      </div>
+      <div class="aboutBody">
+        <div class="aboutImg">
+          <img class="img1" src="./images/girl 2.png" alt="about">
+        </div>
+        <div class="aboutContent">
+          <p>I'm passionate photographer with deep love for capturing moments that tell stories.From serene kandscapes
+            to expressive portraits, I bring life to frames with creativity and precision..</p>
+          <div class="information">
+            <div class="infox">
+              <i class="fa-solid fa-user"></i>
+              <span>Maria Jeo </span>
+            </div>
+            <div class="infox">
+              <i class="fa-solid fa-phone"></i>
+              <span>945687216</span>
+            </div>
+            <div class="infox">
+              <i class="fa-solid fa-envelope"></i>
+              <span>mari@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Skills -->
+    <section id="skill">
+      <div class="sectionHead">
+        <h2 class="mainHead">Skills</h2>
+        <span class="subHead">My Skills</span>
+      </div>
+      <div class="skillContent">
+        <div class="progressBars">
+          <!-- bar 1 -->
+          <div class="bars">
+            <h3 class="barhead">Protraits</h3>
+            <span class="barPercent">92%</span>
+            <div class="baseBar"></div>
+            <div class="baseBar portBar"></div>
+          </div>
+          <!-- bar 2 -->
+          <div class="bars">
+            <h3 class="barhead">Landscape</h3>
+            <span class="barPercent">80%</span>
+            <div class="baseBar"></div>
+            <div class="baseBar landBar"></div>
+          </div>
+          <!-- bar 3 -->
+          <div class="bars">
+            <h3 class="barhead">Edit</h3>
+            <span class="barPercent">88%</span>
+            <div class="baseBar"></div>
+            <div class="baseBar editBar"></div>
+          </div>
+          <!-- bar 4 -->
+          <div class="bars">
+            <h3 class="barhead">Wildlife</h3>
+            <span class="barPercent">78%</span>
+            <div class="baseBar"></div>
+            <div class="baseBar portBar"></div>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="skillImage">
+          <img width="80%" class="mySkill" src="./images/skills pic.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="sectionHead">
+        <h2 class="mainHead">Contacts</h2>
+        <span class="subHead">My Contacts</span>
+      </div>
+      <div class="iconCollection">
+          <!-- Linkedin -->
+            <div class="icon">
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in brands"></i></a>
+            </div>
+           <!-- Github -->
+             <div class="icon">
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+            </div>
+             <!-- whatsapp -->
+               <div class="icon">
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+              </div>
+            <!-- Twitter -->
+               <div class="icon">
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              </div>
+             <!-- instagram -->
+                 <div class="icon">
+                  <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+                 </div>
+              <!-- facebook -->
+                <div class="icon">
+                  <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-facebook brands"></i></a>
+                 </div>
+      </div>
+    </section>
+    <!-- Footer -->
+     <footer>
+      <p id="copyright">&copy; Maria photography Portfolio - June 2024,&reg; All rights Reserved</p>
+      <!-- uparrow -->
+        <div class="icon upArrow">
+                <a href #container"><i class="fa-solid fa-angle-up brands"></i></a>
+            </div>
+     </footer>
+  </div>
+</body>
+<!-- aos script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
