@@ -2,18 +2,32 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Special Gothic", sans-serif;
+     font-family: "Roboto Condensed", sans-serif;
 }
-#container{
+body,div,p,li,a {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+header{
+    position: fixed;
     width: 100%;
-    height: 100vh;
+    background: #00000069;
+    z-index: 1000;
+   transition: padding .3s;
+            
+    
+}
+
+.container{
+   width: 90%;
     position: relative;
+    margin: 0 auto;
 }
 nav{
+  
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-left: 100px;
 }
 .logo{
     width: 100px;
@@ -26,35 +40,99 @@ nav{
 .links{
     text-decoration: none;
     font-weight: 600;
-    color: black;
+    color: white;
 }
 .links:hover{
-    text-decoration: underline;
-    color: red;
+    text-decoration: none;
+    color: #6224DF;
 }
-.home-content{
-    margin: 13% 0px 0px 8%;
+.section{
+    padding: 110px 0;
+}
+#banner {
+    color: white;
+   height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-image: url('https://cdn.wallpapersafari.com/90/3/zBURbN.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pro-img{
+    border-radius: 50%;
+    max-width: 300px;
+   float: right;
+
+    
+}
+.parent-row {
+  display: flex;
+  gap: 50px;
+}
+
+.column {
+  flex: 1; 
+}
+
+
+h1{
+    font-size: 60px;
 }
 #user-name{
     font-size: 50px;
     margin-bottom: 20px;
-   font-family: "Dancing Script", cursive;
+  
 }
-#lname{
-    font-family: "Dancing Script", cursive;
-    color: green;
-}
+
 #user-details{
-    line-height: 2.2;
+    line-height: 1.6;
+    font-size: 20px;
+  
 }
-#download{
+.pro-btn{
+}
+.pro-btn img{
+    max-height: 80px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.download{
   text-decoration: none;
-  background-color: black;
+  border: 2px solid white;
   color: white;
-  padding: 10px;
+  padding: 15px 20px ;
   margin-top: 30px;
-  border-radius: 10px;
   display: inline-block;
+    
+}
+.portfolio{
+     text-decoration: none;
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  padding: 15px 20px ;
+  margin-top: 30px;
+  display: inline-block;
+}
+.portfolio:hover{
+    background-color: transparent;
+    color: white;
+   
+}
+.btn-left{
+    margin-right: 20px ;
+}
+.download:hover{
+    background-color: white;
+    color: black;
+   
+}
+.icons{
+
 }
 .home-img{
     width: 45%;
@@ -78,16 +156,20 @@ nav{
         left: 40%;
 }
 #about{
-    margin: 19% 8% 0px 8%;
+    background-color: #ebebeb;
 }
 .sectionHead{
     text-align: center;
+    margin-bottom: 40px;
 }
 .mainHead{
-    font-size: 30px;
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 .subHead{
-    color: blue;
+    font-size: 25px;
+    color: black;
+    
 }
 .aboutBody{
     margin-top: 20px;
@@ -95,6 +177,7 @@ nav{
     grid-template-columns: repeat(2,1fr); 
     gap: 50px;
     align-items: center;
+    
 }
 .img{
     width: 80%;
@@ -102,6 +185,37 @@ nav{
 .aboutContent{
     font-size: 20px;
     text-align: justify;
+    line-height: 1.8rem;
+}
+.profile-row{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+ 
+}
+.icons{
+    color: #3e3e3e;
+    font-size:xx-large;
+}
+.profile-coloumn{
+    border: 2px solid rgb(218 218 218 / 50%);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+
+}
+.profile-coloumn:hover{
+   box-shadow: 0px 0px 8px 0px #ccc;
+}
+.profile-coloumn h4{
+    margin-top: 15px;
+   margin-bottom: 15px;
+}
+.profile-coloumn h2{
+    color: rgb(186, 183, 183);
 }
 .information{
     margin-top: 1.3rem;  /*- 1rem = 16px -*/
@@ -115,7 +229,7 @@ nav{
     margin-left: 1rem;
 }
 #skill{
-    margin: 8% 8% 0px 8%;
+    border-top: 1px solid #ccc;
 }
 .skillContent{
     display: grid;
@@ -123,6 +237,46 @@ nav{
     align-items: center;
     gap: 2rem;
     margin-top: 20px;
+}
+.parent-port{
+    display: flex;
+}
+.inner-port{
+    flex: 1;
+    position: relative;
+}
+.inner-port img{
+    
+    width: 100%;
+    height: 100%;
+ position: relative;
+
+}
+.inner-port:hover .overlay{
+    z-index: 2;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.394);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.portfolio-section{
+    background-color: #ebebeb;
+    padding: 50px 0;
+}
+.portfolio-section h2{
+    font-size: 50px;
 }
 .bars{
     display: flex;
@@ -137,25 +291,25 @@ nav{
 }
 .baseBar{
     width: 100%;
-    height: 0.5rem;
-    background-color: black;
+    height: 0.9rem;
+    background-color: rgb(196, 196, 196);
     border-radius: 10px;
     position: absolute;
     bottom: 0px;
 }
 .portBar{
-    background-color: rgb(105, 177, 105);
+    background-color: rgb(0, 0, 0);
     width: 92%;
 }
 .landBar{
-    background-color: rgb(105, 177, 105);
+    background-color: rgb(0, 0, 0);
     width: 80%;
 }.editBar{
-    background-color: rgb(105, 177, 105);
+    background-color: rgb(0, 0, 0);
     width: 88%;
 }
 .wildBar{
-    background-color: rgb(105, 177, 105);
+    background-color: rgb(0, 0, 0);
     width: 78%;
 }
 #contact{
@@ -169,7 +323,7 @@ nav{
 }
 
 .icon{
-    height: 70px;
+    height: 50px;
     width: 50px;
     border-radius: 50%;
     display: flex;
@@ -182,13 +336,85 @@ nav{
     font-size: 2rem;
 }
 .icon:hover{
-    background-image: linear-gradient(to bottom right, blue,green,yellow);
+    background-image: linear-gradient(to bottom right, rgb(28, 28, 28),rgb(36, 36, 36),rgb(135, 135, 135));
 }
 .icon:hover .brands{
     color: white;
     /* Animation */
     animation: rotate 3s;
 }
+
+/***********************************************************************/
+.contact-section .subHead{
+    color:#ffffff;
+}
+.contact-section {
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+    margin-top:0px;
+}
+.contact-row{
+    display: flex;
+}
+ .contact-form {
+    z-index: 1;
+    flex:1;
+}
+.contact-content {
+    z-index: 1;
+    flex:1;
+}
+.contact-content {
+    padding-right: 20px;
+}
+.contact-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.contact-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #000;;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background: #ffffff;
+    color:#000000;
+}
+.contact-links>div{
+    margin-bottom: 15px;
+}
+/************************************************************************/
+
 @keyframes rotate{
     0%{
         transform: rotate(30deg);
@@ -210,9 +436,10 @@ nav{
     }
 }
 footer{
-    margin-top: 8%;
+    margin-top: 0px;
 }
 #copyright{
+    margin-top: 10px;
     text-align: center;
     font-weight: 600;
 }
@@ -231,6 +458,6 @@ html{
     background-color: bisque;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: green;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
